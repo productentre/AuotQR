@@ -1052,3 +1052,12 @@ footer {
     line-height: 1.2 !important;
   }
 }
+/* Navigation container par apply karein */
+.nav-links {
+  display: flex;
+  flex-direction: row; /* Items ko horizontally align karne ke liye */
+  align-items: center;
+  justify-content: center; /* Center me align karne ke liye */
+  gap: 20px; /* Links ke darmiyan space dene ke liye */
+  list-style: none; /* Agar <ul> tag use kar rahe hain */
+}
