@@ -1030,3 +1030,25 @@ footer {
     gap: 10px;
   }
 }
+@media (max-width: 768px) {
+  header, nav, .navbar {
+    height: auto !important;
+    padding: 15px 10px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .nav-links, nav ul {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 15px !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .nav-links a, nav ul li a {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+}
