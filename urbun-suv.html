@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Urban SUV | AutoQR</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+</script>
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+<span>Q</span> AutoQR
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="vehicles.html">Vehicles</a>
+
+<a href="how-it-works.html">How It Works</a>
+
+<a href="dealerships.html">For Dealerships</a>
+
+<a href="pricing.html">Pricing</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="vehicle-detail">
+
+<div class="detail-image">
+
+<img
+src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1400&q=85"
+alt="Urban SUV">
+
+</div>
+
+
+<div class="detail-info">
+
+<p class="eyebrow">
+DIGITAL VEHICLE PROFILE
+</p>
+
+<h1>
+Urban
+<span>SUV</span>
+</h1>
+
+<h2 class="price">
+PKR 11,250,000
+</h2>
+
+<p class="description">
+
+Explore complete information about this
+modern Urban SUV through AutoQR.
+
+</p>
+
+
+<div class="spec-grid">
+
+<div>
+<small>YEAR</small>
+<strong>2026</strong>
+</div>
+
+<div>
+<small>ENGINE</small>
+<strong>2.0L</strong>
+</div>
+
+<div>
+<small>TRANSMISSION</small>
+<strong>Automatic</strong>
+</div>
+
+<div>
+<small>FUEL</small>
+<strong>Petrol</strong>
+</div>
+
+</div>
+
+
+<div class="buttons">
+
+<button class="btn-primary"
+onclick="bookTestDrive()">
+
+Book Test Drive
+
+</button>
+
+<a href="contact.html"
+class="btn-secondary">
+
+Contact Dealer
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="qr-section">
+
+<div>
+
+<p class="eyebrow">
+SMART VEHICLE ACCESS
+</p>
+
+<h2>
+Scan this QR code
+<br>
+to explore this SUV.
+</h2>
+
+<p>
+Scan the QR code with your smartphone
+to access this vehicle's digital profile.
+</p>
+
+</div>
+
+
+<div class="qr-box">
+
+<div id="qrcode"></div>
+
+<h3>
+Scan to Explore
+</h3>
+
+<p>
+Urban SUV
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="logo">
+<span>Q</span> AutoQR
+</div>
+
+<p>
+© 2026 AutoQR
+</p>
+
+</footer>
+
+
+<script>
+
+new QRCode(
+
+document.getElementById("qrcode"),
+
+{
+
+text: window.location.href,
+
+width: 180,
+
+height: 180
+
+}
+
+);
+
+
+function bookTestDrive() {
+
+alert(
+"Test drive request received!"
+);
+
+}
+
+</script>
+
+</body>
+</html>

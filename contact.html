@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Contact | AutoQR</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+<span>Q</span> AutoQR
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="vehicles.html">Vehicles</a>
+
+<a href="how-it-works.html">How It Works</a>
+
+<a href="dealerships.html">For Dealerships</a>
+
+<a href="pricing.html">Pricing</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="contact-page">
+
+
+<div>
+
+<p class="eyebrow">
+GET IN TOUCH
+</p>
+
+<h1>
+Let's Make Your
+<span>Showroom Digital.</span>
+</h1>
+
+<p>
+Want to modernize your dealership?
+Contact the AutoQR team.
+</p>
+
+</div>
+
+
+<form
+onsubmit="sendMessage(event)">
+
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+
+<input
+type="text"
+placeholder="Dealership Name">
+
+
+<textarea
+placeholder="Tell us about your requirements">
+</textarea>
+
+
+<button
+class="btn-primary"
+type="submit">
+
+Request a Demo →
+
+</button>
+
+
+</form>
+
+
+</section>
+
+
+<footer>
+
+<div class="logo">
+<span>Q</span> AutoQR
+</div>
+
+<p>
+© 2026 AutoQR
+</p>
+
+</footer>
+
+
+<script>
+
+function sendMessage(event) {
+
+event.preventDefault();
+
+alert(
+"Thank you! Your request has been submitted."
+);
+
+event.target.reset();
+
+}
+
+</script>
+
+
+</body>
+</html>

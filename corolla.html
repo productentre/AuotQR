@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Corolla Altis | AutoQR</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- QR CODE LIBRARY -->
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>Q</span> AutoQR
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="vehicles.html">
+            Vehicles
+        </a>
+
+        <a href="how-it-works.html">
+            How It Works
+        </a>
+
+        <a href="dealerships.html">
+            For Dealerships
+        </a>
+
+        <a href="pricing.html">
+            Pricing
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- VEHICLE DETAILS -->
+
+<section class="vehicle-detail">
+
+
+    <!-- IMAGE -->
+
+    <div class="detail-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1400&q=85"
+        alt="Corolla Altis">
+
+    </div>
+
+
+    <!-- INFORMATION -->
+
+    <div class="detail-info">
+
+        <p class="eyebrow">
+            DIGITAL VEHICLE PROFILE
+        </p>
+
+        <h1>
+            Corolla
+            <span>Altis</span>
+        </h1>
+
+        <h2 class="price">
+            PKR 8,499,000
+        </h2>
+
+        <p class="description">
+
+            Experience the Corolla Altis with complete
+            digital vehicle information powered by AutoQR.
+
+        </p>
+
+
+        <!-- SPECS -->
+
+        <div class="spec-grid">
+
+            <div>
+                <small>
+                    YEAR
+                </small>
+
+                <strong>
+                    2026
+                </strong>
+            </div>
+
+            <div>
+                <small>
+                    ENGINE
+                </small>
+
+                <strong>
+                    1.6L
+                </strong>
+            </div>
+
+            <div>
+                <small>
+                    TRANSMISSION
+                </small>
+
+                <strong>
+                    Automatic
+                </strong>
+            </div>
+
+            <div>
+                <small>
+                    FUEL
+                </small>
+
+                <strong>
+                    Petrol
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="buttons">
+
+            <button class="btn-primary"
+                    onclick="bookTestDrive()">
+
+                Book Test Drive
+
+            </button>
+
+            <a href="contact.html"
+               class="btn-secondary">
+
+                Contact Dealer
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QR SECTION -->
+
+<section class="qr-section">
+
+
+    <div>
+
+        <p class="eyebrow">
+            SMART VEHICLE ACCESS
+        </p>
+
+        <h2>
+            Scan this QR code
+            <br>
+            to view vehicle information.
+        </h2>
+
+        <p>
+
+            Customers can scan this QR code using
+            their smartphone camera and instantly
+            access this vehicle's digital profile.
+
+        </p>
+
+    </div>
+
+
+    <div class="qr-box">
+
+        <div id="qrcode"></div>
+
+        <h3>
+            Scan to Explore
+        </h3>
+
+        <p>
+            Corolla Altis
+        </p>
+
+    </div>
+
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="section">
+
+
+    <div class="section-title">
+
+        <p class="eyebrow">
+            VEHICLE FEATURES
+        </p>
+
+        <h2>
+            Everything you need
+            <span>to know.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="features">
+
+
+        <div>
+
+            <span>01</span>
+
+            <h3>
+                Premium Interior
+            </h3>
+
+            <p>
+                Comfortable and modern interior
+                designed for everyday driving.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>02</span>
+
+            <h3>
+                Safety Features
+            </h3>
+
+            <p>
+                Modern safety and driver assistance
+                features.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>03</span>
+
+            <h3>
+                Smart Technology
+            </h3>
+
+            <p>
+                Modern digital technology for
+                a better driving experience.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="logo">
+        <span>Q</span> AutoQR
+    </div>
+
+    <p>
+        © 2026 AutoQR
+    </p>
+
+</footer>
+
+
+<script>
+
+    /*
+       IMPORTANT:
+
+       When website is hosted online, replace
+       this URL with your actual website URL.
+
+       Example:
+
+       https://yourwebsite.com/corolla.html
+    */
+
+    const vehicleURL =
+        window.location.href;
+
+
+    new QRCode(
+
+        document.getElementById("qrcode"),
+
+        {
+            text: vehicleURL,
+
+            width: 180,
+
+            height: 180
+        }
+
+    );
+
+
+    function bookTestDrive() {
+
+        alert(
+            "Test drive request received!"
+        );
+
+    }
+
+</script>
+
+
+</body>
+</html>
