@@ -1023,3 +1023,10 @@ footer {
     }
 
 }
+@media (max-width: 768px) {
+  nav, .nav-links, .navbar {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
