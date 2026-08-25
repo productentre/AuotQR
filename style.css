@@ -723,3 +723,103 @@ footer {
         gap: 10px;
     }
 }
+/* ================= FEEDBACK ================= */
+
+.feedback-section {
+    padding: 100px 8%;
+    background: #0b0e12;
+}
+
+.feedback-heading {
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.feedback-heading h2 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.feedback-heading h2 span {
+    color: #d8aa62;
+}
+
+.feedback-heading p {
+    color: #a7a7a7;
+    line-height: 1.7;
+}
+
+.feedback-form {
+    max-width: 850px;
+    margin: auto;
+    background: #12161c;
+    padding: 40px;
+    border: 1px solid #292f37;
+    border-radius: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: #080b0f;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d8aa62;
+}
+
+/* STAR RATING */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 35px;
+    color: #555;
+    cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #d8aa62;
+}
+
+#feedbackMessage {
+    margin-top: 20px;
+    color: #d8aa62;
+    font-weight: 600;
+}
